@@ -32,6 +32,10 @@
 #define ZCALLBACK
 #endif
 #endif
+#ifndef OF
+#define OF(x) x
+#endif
+
 
 #ifdef __cplusplus
 extern "C" {
