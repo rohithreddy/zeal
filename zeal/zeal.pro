@@ -70,11 +70,11 @@ unix:!macx: SOURCES += xcb_keysym.cpp
 unix:!macx: DEFINES += LINUX
 
 unix:!macx:!no_libappindicator {
-    INCLUDEPATH += /usr/include/libappindicator-0.1 \
+    INCLUDEPATH += /usr/include/libappindicator3-0.1 \
         /usr/include/gtk-2.0 \
         /usr/lib/gtk-2.0/include
     PKGCONFIG = gtk+-2.0
-    LIBS += -lappindicator
+    LIBS += -lappindicator3
 
     DEFINES += USE_LIBAPPINDICATOR
 }
